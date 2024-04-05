@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif; /* Optional */
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    border: 1px solid black;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    overflow: hidden; /* Clear float */
+}
+
+.section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #F8D7DA; /* Unique color for each section title */
+    padding: 5px 10px;
+    border: 1px solid black;
+}
+
+.section p {
+    padding: 20px;
+}
+
+/* Responsive layout */
+@media (min-width: 768px) {
+    .section {
+        float: left;
+        width: 50%;
+    }
+    #section3 {
+        clear: both;
+    }
+}
+
+@media (min-width: 992px) {
+    .section {
+        width: 33.33%;
+    }
+}
